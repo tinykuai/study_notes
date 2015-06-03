@@ -1,3 +1,3 @@
 # study_notes
 
-Edit on [stackedit](https://stackedit.io "stackedit"), pubish on [GitHub](https://github.com "GitHub")
+Edit on [StackEdit](https://stackedit.io "StackEdit"), pubish on [GitHub](https://github.com "GitHub")
