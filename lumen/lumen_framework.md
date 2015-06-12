@@ -38,6 +38,15 @@ closure => return [$action]
 - middleware => TerminableMiddleware
 - routeMiddleware 
 
+> TerminableMiddleware 继承自 Middleware，其中多加了一个 terminate 抽象方法，加入到 $app->middleware 。
+> 在处理完请求后调用，增加了接口 terminate($request, $response);
+
+  ```
+  $app->middleware([
+    'my_terminatemiddleware' => 'App\Http\Middleware\MyTerminateMiddleware',
+ ]);
+```
+
 # dispatch
 
 ## Pipe
@@ -58,12 +67,3 @@ protected function getInitialSlice(Closure $destination)
 - send 传递进来的是 Request 对象 => passable
 - through 传递进来的是 middleware => pipe
 - then 传递进来的是闭包
-
-> TerminableMiddleware 继承自 Middleware，其中多加了一个 terminate 抽象方法，加入到 $app->middleware 。
-> 在处理完请求后调用，增加了接口 terminate($request, $response);
-
-  ```
-  $app->middleware([
-    'my_terminatemiddleware' => 'App\Http\Middleware\MyTerminateMiddleware',
- ]);
-```
