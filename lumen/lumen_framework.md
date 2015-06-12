@@ -57,7 +57,7 @@ protected function getInitialSlice(Closure $destination)
 - then 传递进来的是闭包
 
 > TerminableMiddleware 继承自 Middleware，其中多加了一个 terminate 抽象方法，加入到 $app->middleware 。
-> 在处理万请求后调用，增加了接口 terminate($request, $response);
+> 在处理完请求后调用，增加了接口 terminate($request, $response);
 
   ```
   $app->middleware([
