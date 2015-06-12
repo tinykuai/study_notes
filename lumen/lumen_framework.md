@@ -8,13 +8,13 @@ lumen学习笔记
 - namespace: 命名空间，结合 action 中的 uses 键使用
 
 ## action: string | array | closure
+```
+string => return ['uses' => $action]
+array => return $action
+closure => return [$action]
+``` 
 
->	string => return ['uses' => $action]
->    array => return $action
->    closure => return [$action]
-    
 >    上述所有形式的参数最终都转换为了 array 的形式
-
 
 ## uri 处理：
 
