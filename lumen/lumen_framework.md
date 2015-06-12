@@ -38,8 +38,7 @@ closure => return [$action]
 - middleware => TerminableMiddleware
 - routeMiddleware 
 
-> TerminableMiddleware 继承自 Middleware，其中多加了一个 terminate 抽象方法，加入到 $app->middleware 。
-> 在处理完请求后调用，增加了接口 terminate($request, $response);
+> TerminableMiddleware 继承自 Middleware，**增加了接口 terminate($request, $response)**，注册到 $app->middleware 中，当请求处理完后被调用。
 
   ```
   $app->middleware([
