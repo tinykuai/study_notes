@@ -43,6 +43,8 @@ lumen学习笔记
 ## Pipe
 
 Pipe 中的函数： 返回了一个闭包，给原来的闭包有一个传递参数的机会
+
+```
 protected function getInitialSlice(Closure $destination)
     {
         return function($passable) use ($destination)
@@ -50,6 +52,7 @@ protected function getInitialSlice(Closure $destination)
             return call_user_func($destination, $passable);
         };
     }
+```
 
 - pipe 中的 passable 是 Request 对象
 - send 传递进来的是 Request 对象 => passable
