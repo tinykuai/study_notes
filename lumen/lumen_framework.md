@@ -2,7 +2,9 @@ lumen学习笔记
 ===================
 
 # 路由
-- groupAttributes 键值：
+
+## groupAttributes 键值：
+
 - prefix: 路径前缀
 - middleware: 中间件
 - namespace: 命名空间，结合 action 中的 uses 键使用
