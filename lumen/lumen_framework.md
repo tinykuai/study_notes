@@ -26,7 +26,6 @@ closure => return [$action]
 ## action 可以设置的键值：
 
 - middleware
-- uses
 - as: 为此路由取别名，存在 nameRouts 数组中，键为别名，值为 uri
 - uses: 配合groupAttributes 中的 namespace，namespace\$action['uses']
 - group 和 action 中都可以设置 middleware，middleware 之间用 '|' 隔开
