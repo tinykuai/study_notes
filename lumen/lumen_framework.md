@@ -67,3 +67,12 @@ protected function getInitialSlice(Closure $destination)
 - send 传递进来的是 Request 对象 => passable
 - through 传递进来的是 middleware => pipe
 - then 传递进来的是闭包
+
+# Controller
+
+## Middleware in Controller
+
+控制器中设置中间件的选项 [白名单 | 黑名单]
+
+- only
+- except
