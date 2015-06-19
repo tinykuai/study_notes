@@ -76,3 +76,7 @@ protected function getInitialSlice(Closure $destination)
 
 - only
 - except
+
+# Request [use Illuminate\Http\Request;]
+
+包含请求的所有信息，控制器的 action 中，前几个参数可以是 Request 参数，后面的为路由参数。
